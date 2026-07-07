@@ -9,10 +9,10 @@ Medi Core ERP is a high-end, fully responsive enterprise resource planning dashb
 ## 🖥️ Application Previews
 
 ### 🔐 Master Access Terminal
-![Master Authentication Landing Page Interface](/public/login-terminal.png)
+![Master Authentication Landing Page Interface](/public/Admin-patient.png)
 
 ### 📊 Root Administration Command Center
-![Unified Administrative Console Dashboard Framework](/public/admin-dashboard.png)
+![Unified Administrative Console Dashboard Framework](/public/login.png)
 
 ---
 
