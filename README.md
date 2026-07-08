@@ -91,24 +91,35 @@ MEDI-CORE-ERP-APP
 ---
 
 ## 🗄️ Relational Database Architecture
-```text
 
-[patients]                    [appointments]
-  ├── id (PK)   <────────┐      ├── id (PK)
-  ├── name               └───── ├── patientId (FK)
-  ├── dob                       ├── doctorId
-  ├── gender                    ├── appointmentDate
-  ├── contact                   ├── appointmentTime
-  ├── address                   └── status
-  ├── bloodGroup
-  └── createdAt                 [medicines]
-                                ├── id (PK)
-  [bills]                       ├── name
-  ├── id (PK)                   ├── quantity
-  ├── patientId (FK) ────────── ├── expiryDate
-  ├── amount                    ├── price
-  ├── billDate                  └── createdAt
-  └── status
+The system utilizes a structured relational database engine configured within a MySQL environment. While keys are handled dynamically via application API controllers, the structural relationships map as follows:
+
+```text
+  [patients]                       [appointments]
+  ├── id (PK) <──────────────┐     ├── id (PK)
+  ├── name                   ├──── ├── patientId (Logical FK)
+  ├── dob                    │     ├── doctorId
+  ├── gender                 │     ├── appointmentDate
+  ├── contact                │     ├── appointmentTime
+  ├── address                │     ├── status
+  └── createdAt              │     └── createdAt
+                             │
+                             │     [bills]
+                             │     ├── id (PK)
+                             └──── ├── patientId (Logical FK)
+                                   ├── amount
+                                   ├── billDate
+                                   ├── status
+                                   └── createdAt
+
+  [medicines]
+  ├── id (PK)
+  ├── name
+  ├── quantity
+  ├── expiryDate
+  ├── price
+  └── createdAt
+
 ```
 ---
 
