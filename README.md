@@ -11,7 +11,7 @@ Medi Core ERP is a high-end, fully responsive enterprise resource planning dashb
 ### 🔐 Master Access Terminal
 ![Master Authentication Landing Page Interface](/public/Admin-patient.png)
 
-### 📊 Root Administration Command Center
+### 📊 Root Login Center
 ![Unified Administrative Console Dashboard Framework](/public/login.png)
 
 ---
@@ -128,8 +128,8 @@ The system utilizes a structured relational database engine configured within a 
 1. Clone the Workspace Matrix
    
    ```text
-   git clone [https://github.com/yourusername/medi-core-erp-app.git](https://github.com/yourusername/medi-core-erp-app.git)
-   cd medi-core-erp-app
+   git clone https://github.com/THARINDUnirmal/medi-core-erp-system.git
+   cd medi-core-erp-system
    ```
 2. Install Project Dependencies
    
@@ -142,6 +142,8 @@ Because native binary database modules can clash with automated experimental bun
 
    ```text
    npx next dev --webpack
+   or
+   npm run dev
    ```
 
 ---
