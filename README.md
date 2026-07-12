@@ -4,7 +4,12 @@
 
 Medi Core ERP is a high-end, fully responsive enterprise resource planning dashboard built with **Next.js App Router**, **Tailwind CSS**, and **TypeScript**. It connects seamlessly to a **MySQL** backend via a connection pool to provide real-time, master-level CRUD control over four critical hospital operational divisions from a unified command terminal.
 
+<h3>Frontend : Next.js</h3>
+
+<h3>DataBase : MySQL</h3>
+
 ---
+
 
 ## 🖥️ Application Previews
 
